@@ -20,9 +20,7 @@ jobs:
             - name: Check out repository code
               uses: actions/checkout@v4
               with:
-                fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-
-			# 记得替换下面的 邮箱、用户名、仓库名
+                fetch-depth: 0   
             - name: Sync vercelcdn
               run: |
                 git config --global user.email "chenning0128@icloud.com"
